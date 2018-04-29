@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping" >
+<hibernate-mapping>
+
+	<class name = "model.Medications" table = "medications" dynamic-update = "true">	
+		 <id name="name" column ="NAME" type="java.lang.String">
+            <generator class="assigned" />
+        </id>
+        <property name="ingredients" column ="INGREDIENTS" type="java.lang.String"/>
+    
+        <property name="manufacturer" column ="MANUFACTURER" type="java.lang.String"/>
+        
+        <property name="quantity" column ="QUANTITY" type="java.lang.Integer"/>
+      
+        <property name="price" column ="PRICE" type="java.lang.Integer"/>
+        
+	</class>
+
+</hibernate-mapping>
